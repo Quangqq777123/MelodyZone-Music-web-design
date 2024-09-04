@@ -1,0 +1,271 @@
+:root {
+    --test: red;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background: url(../Images/5887403.jpg) center/cover no-repeat fixed;
+}
+.Flex
+{
+    display: flex;
+}
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px ;
+    background: transparent;
+}
+
+.link-homepage
+{
+    text-decoration: none;
+    color:white;
+}
+.Logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Logo>img {
+    width: 50px;
+    height: 50px;
+}
+
+
+.Logo>h1 {
+
+    font-size: 2rem;
+    text-align: center;
+    color: azure;
+}
+
+
+main {
+    margin-top: 90px;
+    display: flex ;
+    min-height: calc(100vh - 85px);
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    min-width: 310px;
+    width:40%;
+    height: 600px;
+    max-width: 400px;
+    background-color:white ;
+    border: 2px solid rgba(244, 233, 233, 0.779);
+    backdrop-filter: blur(30px);
+    border-radius: 30px;
+    position: fixed;
+    overflow: hidden;
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+
+.container >h2
+{
+    
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top:25px;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.input_container
+{
+    
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.label
+{
+    
+    color:  black;
+    font-weight: 50px;
+    line-height: 1.5;
+    padding-left: 15px;
+
+    font-size: 20px;
+}
+
+.input_placeholder
+{
+    
+    position: relative;
+    gap:5%;
+    color: #333333;
+    border-bottom: 3px solid grey;
+    line-height: 1.2;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.icon
+{
+    font-size:30px;
+    color: rgb(193, 69, 193);
+    padding-left: 10px;
+}
+
+.input{
+
+    font-size: 20px;
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border:none;
+    color:black;
+}
+input::placeholder
+{
+    color:grey;
+    
+}
+.input:valid
+{
+    border:none;
+}
+
+.input:focus
+{
+    border:none;
+}
+
+.component
+{
+    position: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:8%;
+}
+
+
+.component>a
+{
+    font-size: 15px;
+}
+
+.forgot
+{
+    text-decoration: none;
+    color: black;
+}
+
+.forgot:hover
+{
+    color: purple;
+}
+@media (max-width: 600px){
+
+    .component
+    {
+        gap:5%;
+    }
+    .brand
+    {
+        gap:5%
+    }
+}
+
+.container>button
+{
+    width: 80%;
+    height: 2.5rem;
+    margin-top:15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border-color: none;
+    font-size: 1.4rem;
+    color: white;
+    font-weight: bolder ;
+    background: linear-gradient(#ff2968,#ff2f40,#ff2968);
+}
+
+
+.container>button:hover
+{
+    background: #5f060d !important;
+}
+
+
+.txt1
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand
+{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5%;
+
+}
+
+.brand>a
+{
+    text-decoration: none;
+}
+
+.container>:last-child
+{
+    bottom:0;
+    width: 100%;
+    position: fixed;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    gap:5px;
+
+}
+
+.facebook
+{
+    color:blue;
+}
+
+.google
+{
+    color:red;
+}

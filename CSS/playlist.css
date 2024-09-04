@@ -1,0 +1,19 @@
+
+
+.aside-right
+{
+    flex-direction: column;
+}
+
+.playlist
+{
+    
+    background: #DFDFDE;
+    
+    margin-bottom: 10px;
+}
+
+.playlist>.next-songs-header
+{
+    
+}

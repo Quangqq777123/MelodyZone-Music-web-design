@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MelodyZone | Login & Register Site!!!</title>
+    <link rel="stylesheet" href="../../CSS/SignIn.css">
+    <link rel="shortcut icon" href="../../Images/Logo.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="../../JS/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="../Homepage/HomePage.html" class="link-homepage">
+            <div class="Logo Flex">
+                <img src="../../Images/Logo.png" alt="LOGO">
+                <h1>MELODYZONE</h1>
+            </div>
+        </a>
+    </header>
+    <main >
+        <form class="container">
+            <h2 class="Flex">SIGN IN</h2>
+
+            <div class="input_container" data-validate = "Username is required">
+                <span class="label">Username</span>
+                <div class="input_placeholder">
+                    <i class='bx bxs-user icon'></i>
+                    <input class="input User" type="text" placeholder="Type your username" required>
+                    
+                </div>
+
+            </div>
+
+            <div class="input_container" data-validate="Password is required">
+                <span class="label">Password</span>
+                <div class="input_placeholder">
+                    <i class='bx bxs-lock icon' ></i>
+                    <input class="input Password" type="password" placeholder="Type your password" required>
+                    
+                </div>
+
+            </div>
+            
+            <div class="component">
+                <div class="remeber_me">
+                    <input type="checkbox" class="checkbox">
+                    <span>Remember me</span>
+                </div>
+                <a href="#" class="forgot">
+                    Forgot password?
+                </a>
+            </div>
+            
+            <button id="btn">
+                SIGN IN
+            </button>
+
+            <div class="txt1">
+                <span>
+                    Or Sign In Using
+                </span>
+            </div>
+
+            <div class="brand">
+
+                <a href="https://www.facebook.com/" class="facebook">
+                    <i class='bx bxl-facebook-circle'></i>
+                </a>
+
+                <a href="https://www.google.com/intl/vi/gmail/about/" class="google">
+                    <i class='bx bxl-google-plus-circle' ></i>
+                </a>
+            </div>
+
+
+            <span>Don't have an account?<a href="SignUp.html">Sign Up</a></span>
+
+        </form>
+
+            
+    </main>
+
+
+
+    <script src="../../JS/Sign_In.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+.Profile
+{
+    background-color: white;
+}
+.bxs-user-rectangle
+{
+    font-size: 5rem;
+    color: black;
+    background-color: white;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+.Information
+{
+    padding:20px;
+    background-color: #EEEDEB;
+    border: 1px solid red;
+}
+
+.account
+{
+    padding:20px;
+    margin-top: 2%;
+    background-color: #EEEDEB;
+    border: 1px solid red;
+}
+.musics
+{
+    display: flex;
+    padding:20px;
+    background-color: #EEEDEB;
+    max-height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+.music > a
+{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+.music > a:hover
+{
+    text-decoration: underline;
+}
+
+main{
+    height: 800px;
+}

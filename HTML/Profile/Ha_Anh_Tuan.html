@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MelodyZone | HomePage!!!</title>
+    <link rel="stylesheet" href="../../CSS/HomePage.css">
+    <link rel="stylesheet" href="../../CSS/Footer.css">
+    <link rel="stylesheet" href="../../CSS/ProfileArtists.css">
+    <link rel="stylesheet" href="../../CSS/MobileHeader.css" media="screen and (max-width:1024px)">
+    <link rel="stylesheet" href="../../CSS/Menu.css">
+    <link rel="stylesheet" href="../../CSS/Songs.css">
+    <link rel="shortcut icon" href="../../Images/Logo.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header class="Mobile Flex">
+        <div class="MobileMenuIcon">
+            <i class='bx bx-menu'></i>
+        </div>
+        <div class="MobileIMG Flex">
+            <a href="../Homepage/HomePage.html"><img src="../../Images/Logo.png" alt="LOGO"></a>
+            <h1>MELODYZONE</h1>
+        </div> 
+        <div id="button-mobile" class="Account_container">
+            <a href="../Login_site/SignIn.html"><button>Log In</button></a>
+        </div>
+        <div id="user-mobile" class="user-icon hidden">
+            <a href="../Profile/Profile.html"><i class='bx bxs-user-circle'></i></a>
+        </div>
+        <div class="full-screen-menu hidden">
+            <div class="menu-close-icon">
+                <i class='bx bx-x'></i>
+            </div>
+            <div class="full-menu-content">
+                <ul class="full-menu-items">
+                    <li><a href="../../HTML/Homepage/HomePage.html">Home</a></li>
+                    <li><a href="../Search/Search.html">Songs</a></li>
+                    <li><a href="../Search/SearchArtists.html">Artists</a></li>
+                    <li><a href="../../HTML/Search/Search.html">Search</a></li>
+                    <li><a href="#" id="logout">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+    
+
+        <div class="overlay hidden"></div>
+    </header>
+
+    <header class="PC Flex">
+        <div class="Logo_and_Menu Flex">
+            <a href="../Homepage/HomePage.html" class="link-homepage">
+                <div class="Logo Flex">
+                    <img src="../../Images/Logo.png" alt="LOGO">
+                    <h1>MELODYZONE</h1>
+                </div>
+            </a>
+            <div class="Menu_container Flex">
+                <ul class="Menu Flex">
+                    <li class="components"><a href="../Search/Search.html">Songs</a></li>
+                    <li class="components"><a href="../Search/SearchArtists.html">Artists</a></li>
+                </ul>
+            </div>
+        </div>
+ 
+        <div class="search_container Flex">
+            <div class="search Flex">
+                <i class='bx bx-search icon'></i>
+                <input type="text" placeholder="Search" class="input">
+            </div>
+        </div>
+        <div id="user" class="hidden">
+            <i class='bx bxs-user-circle'></i>
+            <div class="user-menu hidden">
+                <a href="../Profile/Profile.html">Profile</a>
+                <a href="#" id="logout">Log Out</a>
+            </div>
+        </div>
+        <div id ="buttons" class="Account_container Flex">
+            <a href="../Login_site/SignIn.html"><button class="left">Sign In</button></a>
+            <a href="../Login_site/SignUp.html"><button>Sign Up</button></a>
+        </div>
+    </header>
+    <main>
+       <div class="Profile Flex">
+            <div class="icon-artist">
+                <img src="../../Images/Artists/Ha_Anh_Tuan.jpg" alt="Ha_Anh_Tuan">
+            </div>
+       </div>
+       <div class="Biography">
+        <h1>Biography</h1> 
+        <p>Ha Anh Tuan is a distinguished artist celebrated for his soulful voice and profound musical expression. Hailing from Vietnam, Hà Anh Tuấn blends traditional and contemporary influences to create a unique sound that resonates deeply with audiences. His music often reflects a nuanced understanding of life, love, and identity, offering a rich and multi-dimensional perspective on the human experience. Through his dedication to artistic excellence and heartfelt storytelling, Ha Anh Tuan continues to captivate listeners and leave a lasting impact on the music scene.</p>
+       </div>
+       <div class="musics">
+        <div class="music">
+            <h1>Artist's Songs</h1>
+            <a href="../Songs/Thang_tu_la_loi_noi_doi_cua_em.html">Tháng tư là lời nói dối của em</a>
+            <a href="../Songs/Nguoi_dan_ong_xau_xi.html">Người Đàn Ông Xấu Xí</a>
+            <a href="../Songs/Tim.html">Tìm</a>
+            <a href="../Songs/Lang_le.html">Lặng Lẽ</a>
+            <a href="../Songs/Co_gai_tu_qua_khu.html">Cô Gái Từ Quá Khứ</a>
+        </div>
+       </div>
+    </main>  
+   
+    <footer class="Flex">
+        <div class="Head-footer Flex">
+            <a href="../Homepage/HomePage.html" class="link-homepage link-bottom">
+                <div class="Logo Flex footer-logo">
+                    <img src="../../Images/Logo.png" class="logo-img-footer" alt="LOGO">
+                    <h1>MELODYZONE</h1>
+                </div>
+            </a>
+            <div class="Contact Flex">
+                <h3>Contact Us</h3>
+                <span>Contact with us via:</span>
+                <div class="brand Flex">
+
+                    <a href="https://www.facebook.com/" >
+                        <i class='bx bxl-facebook-circle facebook' ></i>
+                    </a>
+    
+                    <a href="https://www.google.com/intl/vi/gmail/about/">
+                        <i class='bx bxl-google-plus-circle google' ></i>
+                    </a>
+                    <a href="https://x.com/" >
+                        <i class='bx bxl-twitter twitter'></i>
+                    </a>
+                </div>
+            </div>
+
+            <Button class="mail-now">Contact Now!!!</Button>
+
+        </div>
+        
+        <div class="mid">
+            <h1>Support: 2351050141quang@ou.edu.vn - Hotline: 0123456789</h1>
+        </div>
+
+
+    </footer>
+
+    <nav class="gmail-form">
+        
+        <form class="ContactForm Flex">
+                <div><button class="exist"><i class='bx bx-x-circle close-form'></i></button></div>
+                <h1>Contact Us</h1>
+                <input class="name" placeholder="Type your name" required>
+                <input class="email" placeholder="Type your gmail"  required>      
+                <textarea class="message" placeholder="Type your problem" required>Hi, I would like to report some problem!!!</textarea>
+                <button type="submit" class="submit-form">Send</button>
+        </form>
+    </nav>
+
+    <script src="../../JS/Menu.js"></script>
+    <script src="../../JS/Mobile.js"></script>
+    <script src="../../JS/Footer.js"></script>
+</body>
+</html>

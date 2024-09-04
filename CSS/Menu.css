@@ -1,0 +1,279 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.Flex {
+    display: flex ;
+}
+
+.Logo_and_Menu
+{
+    min-width: 32rem;
+    max-width: 34rem;
+    width: 30%;
+    height: 100%;
+    gap:5%;
+}
+
+header {
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 90%;
+    height: 60px;
+    padding: 0px 5%;
+    background-color: #FFC6C6;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    border-bottom: 2px black solid; 
+    z-index: 1000;
+}
+
+.link-homepage {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.Logo > img {
+    width: 30px;
+    height: 30px;
+}
+
+.Logo > h1 {
+    font-size: 1rem;
+    text-align: center;
+    color: black;
+}
+
+.Menu
+{
+    list-style: none;
+    align-items: center;
+    
+}
+
+.components
+{
+
+    border-left: 1px black solid;
+    
+    height: 100%;
+    width: 80px;
+}
+.components>a
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    color:#373A40;
+
+}
+
+.components>a:hover
+{
+    background-color: #F3D0D7;
+    color:black;
+}
+
+.search_container
+{
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.search
+{
+    min-width: 150px;
+    max-width: 800px;
+    width: 100%;
+    background: rgb(230, 230, 230);
+    gap:5px;
+    border-radius: 10px;
+    height: 2rem;
+    padding-top: 5px;
+    padding-bottom:5px ;
+}
+
+.icon
+{
+    font-size:30px;
+    padding-left:5px;
+}
+.input{
+    background: rgb(230, 230, 230);
+    font-size: 15px;
+    width: 100%;
+    outline: none;
+    border:none;
+    color:black;
+    overflow: hidden;
+    border-radius: 10px;
+
+    
+}
+
+.Account_container
+{
+
+height: 100%;
+justify-content: center;
+align-items: center;
+gap:10px;
+padding-left: 2rem;
+}
+
+.Account_container>a>button
+{
+    font-size: 20px;
+    border-radius: 25px;
+    width:100px;
+    height: 40px;
+    border: none;
+    font-weight: bold;
+}
+
+.Account_container>.left
+{
+    padding-left: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#user-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.Account_container>a:last-child>button
+{
+    background-color: #C75B7A;
+    color:white;
+}
+.Account_container>a>button:hover
+{
+    background-color:#e41b57 ;
+    color:white;
+}
+
+
+
+#user a#logout {
+    font-size: 16px;
+    color: #e41b57;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
+}
+
+#user a#logout:hover {
+    text-decoration: underline;
+}
+
+.bxs-user-circle
+{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 10%;
+    color: #e41b57;
+}
+header, main, aside {
+    overflow: visible; 
+}
+
+#user {
+    position: relative;
+}
+
+.user-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10%;
+    width: 200%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0; 
+    display: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease; 
+    z-index: 1000;
+}
+
+#user:hover .user-menu {
+    opacity: 1;
+    display: block;
+}
+
+.user-menu a {
+    text-decoration: none;
+    color: #373A40;
+    font-weight: bold;
+}
+
+.user-menu a:hover {
+    color: #e41b57;
+}
+
+
+.topics
+{
+    position: relative;
+    display: block;
+}
+
+.sub-menu li
+{
+    list-style-type: none;
+    background-color: #FFC6C6;
+    padding: 0.5rem 0;
+    border: 1px solid black;
+    font-weight: bold;
+    text-wrap: nowrap;
+    text-align: center;
+    box-sizing: border-box;
+    display: none;
+}
+
+.sub-menu li>a
+{
+    text-decoration: none;
+    color:black;
+}
+
+.topics:hover .sub-menu li
+{
+    display: block;
+}
+
+.sub-menu li:hover
+{
+    background-color: #F3D0D7;
+    color:black;
+}
